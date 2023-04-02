@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import NavBar from "./components/NavBar";
 import { useFonts } from "expo-font";
 import Hero from "./components/Hero";
+import Services from "./components/Services";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <View style={styles.view}>
         <NavBar />
         <Hero />
+        <Services />
       </View>
     </View>
   );
@@ -17,7 +19,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   view: {
-    width: "80%",
+    width: "90%",
     marginHorizontal: "auto",
     padding: 0,
   },
