@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import { useFonts } from "expo-font";
 import AppText from "./AppText";
+import FloatingProductCard from "./FloatingProductCard";
 
 export default function FeaturedProduct() {
   const [fontsLoaded] = useFonts({
@@ -16,22 +17,7 @@ export default function FeaturedProduct() {
       <AppText style={styles.featureDescription}>
         Our bestseller this week...
       </AppText>
-
-      <View style={styles.featuredProductDetails}>
-        <View style={styles.productDetail}>
-          <AppText style={styles.productHeading}>Daily Serum</AppText>
-          <AppText style={styles.productDescription}>
-            Bakuchiol is a natural alternative to Retinol, which is safe and
-            gentle to use on sensitive skin by all, including teenagers and
-            pregnant women.
-          </AppText>
-        </View>
-
-        <Image
-          source={require("/assets/featured-product-img.png")}
-          style={styles.productImg}
-        />
-      </View>
+      <FloatingProductCard />
     </View>
   );
 }
@@ -41,7 +27,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#EFEFEF",
     // marginHorizontal: "auto",
     alignItems: "center",
-    marginBottom: 40,
+    padding: 0,
+    paddingBottom: 220,
+    marginBottom: 400,
+    position: "relative",
+    marginHorizontal: 0,
   },
 
   featureHeading: {
@@ -57,39 +47,6 @@ const styles = StyleSheet.create({
     fontFamily: "opensans_bolditalic",
     fontSize: 42,
     opacity: "100%",
-    paddingBottom: 50,
-  },
-  productImg: {
-    width: 250,
-    height: 420,
-  },
-  featuredProductDetails: {
-    flexDirection: "row",
-    height: "30%",
-    width: "70%",
-    marginHorizontal: "auto",
-    borderRadius: 15,
-    overflow: "hidden",
-  },
-  productDetail: {
-    backgroundColor: "#954F25",
-    flex: 1,
-    paddingVertical: 60,
-    paddingHorizontal: 50,
-    marginHorizontal: "auto",
-  },
-  productHeading: {
-    color: "white",
-    opacity: "100%",
-    fontSize: 38,
-    fontFamily: "opensans_bold",
-    marginBottom: 35,
-  },
-  productDescription: {
-    color: "white",
-    opacity: "60%",
-    fontSize: 30,
-    fontFamily: "opensans_semibold",
     paddingBottom: 40,
   },
 });

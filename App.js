@@ -6,6 +6,8 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Features from "./components/Features";
 import FeaturedProduct from "./components/FeaturedProduct";
+import Closure from "./components/Closure";
+import Review from "./components/Review";
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
           <Services />
           <Features />
           <FeaturedProduct />
+          <Closure />
+          <Review />
         </View>
       </View>
     </View>
