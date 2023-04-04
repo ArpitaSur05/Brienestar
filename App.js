@@ -5,6 +5,7 @@ import { useFonts } from "expo-font";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Features from "./components/Features";
+import FeaturedProduct from "./components/FeaturedProduct";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <View style={styles.positionStyle}>
           <Services />
           <Features />
+          <FeaturedProduct />
         </View>
       </View>
     </View>
@@ -23,14 +25,13 @@ export default function App() {
 
 const styles = StyleSheet.create({
   view: {
-    width: "90%",
     marginHorizontal: "auto",
     padding: 0,
   },
   positionStyle: {
     top: "100%",
-    left: "0.5%",
-    right: "0.5%",
+    left: 0,
+    right: 0,
     position: "absolute",
   },
 });

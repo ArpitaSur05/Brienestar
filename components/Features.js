@@ -9,7 +9,7 @@ export default function Features() {
     opensans_regular: require("/assets/fonts/OpenSans-Regular.ttf"),
   });
   return (
-    <View>
+    <View style={styles.container}>
       <AppText style={styles.headingStyle}>Why choose us</AppText>
       <View style={styles.featureImg}>
         <View style={styles.featureContent}>
@@ -61,6 +61,10 @@ export default function Features() {
   );
 }
 const styles = StyleSheet.create({
+  container: {
+    marginHorizontal: "auto",
+    width: "90%",
+  },
   featureImg: {
     flexDirection: "row",
     justifyContent: "space-between",

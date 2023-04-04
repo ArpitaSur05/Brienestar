@@ -42,9 +42,10 @@ export default function NavBar() {
 
 const styles = StyleSheet.create({
   nav: {
+    width: "90%",
     flexDirection: "row",
     justifyContent: "space-between",
-    width: "100%",
+    marginHorizontal: "auto",
     gap: 70,
     alignItems: "center",
     paddingVertical: 20,

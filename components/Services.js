@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
       "-3px 6px 15px rgba(0, 0, 0, 0.1), 3px 0px 0px rgba(0, 0, 0, 0.1)",
     paddingHorizontal: 50,
     paddingVertical: 34,
-    width: "85%",
+    width: "70%",
     marginBottom: 106,
     marginHorizontal: "auto",
   },

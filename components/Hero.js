@@ -65,11 +65,13 @@ export default function () {
 
 const styles = StyleSheet.create({
   hero: {
+    width: "85%",
     flexDirection: "row",
-    paddingHorizontal: 20,
+
     justifyContent: "space-between",
     paddingVertical: 20,
     position: "relative",
+    marginHorizontal: "auto",
   },
   header: {
     fontSize: 45,
