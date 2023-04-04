@@ -42,10 +42,9 @@ const styles = StyleSheet.create({
       "-3px 6px 15px rgba(0, 0, 0, 0.1), 3px 0px 0px rgba(0, 0, 0, 0.1)",
     paddingHorizontal: 50,
     paddingVertical: 34,
-
-    marginHorizontal: "auto",
     width: "85%",
     marginBottom: 106,
+    marginHorizontal: "auto",
   },
   serviceImg: {
     height: 200,

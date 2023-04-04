@@ -69,6 +69,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     justifyContent: "space-between",
     paddingVertical: 20,
+    position: "relative",
   },
   header: {
     fontSize: 45,
