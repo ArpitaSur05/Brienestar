@@ -9,6 +9,7 @@ import FeaturedProduct from "./components/FeaturedProduct";
 import Closure from "./components/Closure";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
+import BottomNav from "./components/BottomNav";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Closure />
           <Review />
           <Footer />
+          <BottomNav />
         </View>
       </View>
     </View>
