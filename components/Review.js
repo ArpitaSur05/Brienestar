@@ -13,25 +13,26 @@ export default function Review() {
     <View style={styles.container}>
       <View style={styles.reviewBar}>
         <View style={styles.reviewCard1}>
-          <View style={styles.hehe}>
-            <AppText style={styles.doubleQuote}>“</AppText>
-          </View>
+          <Image
+            source={require("/assets/doubleQuote.svg")}
+            style={styles.doubleQuote}
+          />
 
           <AppText style={styles.review1}>
             Their products are organic and make my skin feel so goooood.
           </AppText>
         </View>
-        {/* <View style={styles.reviewCard2}>
+        <View style={styles.reviewCard2}>
           <AppText style={styles.review2}>
             For their quality, they are extremely affordable
-          </AppText> 
+          </AppText>
         </View>
         <View style={styles.reviewCard1}>
           <AppText style={styles.review1}>
             The staff are very friendly and the environment is comfortable.
           </AppText>
         </View>
-        <View style={styles.sliders}></View> */}
+        <View style={styles.sliders}></View>
       </View>
       <View style={styles.reviewBottom}>
         <View style={styles.summary}></View>
@@ -46,16 +47,11 @@ const styles = StyleSheet.create({
     marginBottom: 120,
     backgroundColor: "white",
   },
-  hehe: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
+
   doubleQuote: {
-    color: "black",
-    fontSize: 90,
-    fontFamily: "parisienne_regular",
-    opacity: "100%",
+    width: 50,
+    height: 50,
+    margin: "0 auto",
   },
   reviewBar: {
     marginHorizontal: "auto",
@@ -67,7 +63,9 @@ const styles = StyleSheet.create({
     height: 270,
     justifyContent: "center",
     borderRadius: 10,
-    width: 1000,
+    width: "max-width",
+    justifyContent: "flex-end",
+    marginHorizontal: "auto",
   },
   reviewCard2: {
     backgroundColor: "rgba(149, 79, 37, 0.9)",

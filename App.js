@@ -8,6 +8,7 @@ import Features from "./components/Features";
 import FeaturedProduct from "./components/FeaturedProduct";
 import Closure from "./components/Closure";
 import Review from "./components/Review";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <FeaturedProduct />
           <Closure />
           <Review />
+          <Footer />
         </View>
       </View>
     </View>
