@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
     paddingBottom: 220,
     marginBottom: 400,
     position: "relative",
-    marginHorizontal: 0,
   },
 
   featureHeading: {

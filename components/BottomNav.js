@@ -28,12 +28,14 @@ export default function BottomNav() {
 const styles = StyleSheet.create({
   iconStyle: {
     paddingLeft: 30,
-    height: 45,
-    width: 45,
+    height: 22,
+    width: 22,
+    resizeMode: "contain",
   },
   iconList: {
     flexDirection: "row",
-    gap: 50,
+    gap: 30,
+    paddingLeft: 80,
   },
   container: {
     flexDirection: "row",

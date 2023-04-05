@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     marginTop: -60,
     paddingHorizontal: 60,
     marginHorizontal: "auto",
-    marginBottom: 120,
+    marginBottom: 60,
   },
   imgContainer: {
     flexDirection: "row",
